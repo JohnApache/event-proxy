@@ -1,0 +1,45 @@
+{
+  "name": "@dking/event-proxy",
+  "version": "1.0.0",
+  "description": "event proxy plug-in implemented with TS",
+  "main": "./dist/eventproxy.js",
+  "module": "./dist/eventproxy.esm.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "test": "mocha --require ts-node/register 'test/**/*.test.{ts,tsx}'",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnApache/event-proxy.git"
+  },
+  "keywords": [
+    "轻量自定义事件代理插件",
+    "解除回调地狱问题",
+    "多异步串行执行",
+    "全局订阅模式",
+    "UMD规范",
+    "async await事件兼容"
+  ],
+  "author": "JohnApache",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnApache/event-proxy/issues"
+  },
+  "homepage": "https://github.com/JohnApache/event-proxy#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "rollup": "^1.21.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.24.2",
+    "ts-node": "^8.4.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {}
+}
