@@ -1,10 +1,10 @@
 {
   "name": "@dking/event-proxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "event proxy plug-in implemented with TS",
   "main": "./dist/eventproxy.js",
   "module": "./dist/eventproxy.esm.js",
-  "typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "mocha --require ts-node/register 'test/**/*.test.{ts,tsx}'",
     "build": "rollup -c",
